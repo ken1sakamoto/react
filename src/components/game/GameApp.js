@@ -7,6 +7,14 @@ const questions = [
     questionText: '数学Ⅲで一番難しい分野は',
     answerOptions: [
       { answerText: '微分積分', isCorrect: true },
+      { answerText: 'ベクトル', isCorrect: true },
+      { answerText: '2次曲線', isCorrect: true },
+    ],
+  },
+  {
+    questionText: '数学Ⅲで一番難しい分野は',
+    answerOptions: [
+      { answerText: '微分積分', isCorrect: true },
       { answerText: 'ベクトル', isCorrect: false },
       { answerText: '2次曲線', isCorrect: false },
     ],
@@ -75,11 +83,14 @@ const GameApp = () => {
   const [score, setScore] = useState(0);
   const [wrong, setWrong] = useState(0);
   const navigate = useNavigate();
-
+  // setScore(score + 1);
+  // setWrong(wrong + 1);
 
   const handleAnswerButtonClick = (isCorrect) => {
+    // if(score == 0) setScore(score + 1);
+    // if(wrong == 0) setScore(wrong + 1);
+    console.log(score,wrong)
 
-   
 
     if (isCorrect) {
       setScore(score + 1);
@@ -90,9 +101,6 @@ const GameApp = () => {
     }
 
     const nextQuestion = currentQuestion + 1;
-
-    // if(wrong == 2) setShowScore(true);
-    // setCurrentQuestion(nextQuestion);
 
     if (wrong < 3) { //&& nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);

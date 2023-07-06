@@ -1,5 +1,7 @@
-import React from "react";
+// import React from "react";
 import "./Form.css";
+import React, { useState } from "react";
+
 
 const Form = (props) => {
   const data = JSON.parse(props.data);
@@ -12,6 +14,11 @@ const Form = (props) => {
 
   const handleChange = (e) => {};
 
+  //inputから入力された値の状態を管理
+  const [text, setText] = useState("");
+ 
+  
+
   return (
     <div className="container">
         <header className="Form-header">
@@ -19,7 +26,11 @@ const Form = (props) => {
       <hr />
       <div>
         <label>User Name：</label>
-        <input type="text" />
+        <input 
+          value={text}
+          onChange={(event) => setText(event.target.value)}
+        />
+         <p>{text}</p>
       </div>
       <div className="spacer" />
       <div>

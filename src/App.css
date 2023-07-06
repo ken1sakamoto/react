@@ -1,3 +1,90 @@
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* 共通のスタイル */
+}
+
+.app.light {
+  background-image: url("../public/back.jpg");
+  background-size: cover;
+  /* ライトテーマのスタイル */
+}
+
+.app.dark {
+  /* background-color: #df0000; */
+  background-image: url("../public/back.jpg");
+  background-size: cover;
+  /* ダークテーマのスタイル */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.box {
+  width: 600px;                
+  height: 200px;               
+  border: 1px solid #000;      
+  overflow-y: scroll;    
+  background-color: #ffffff;   
+  align-items: center;   
+  justify-content: center;
+}
+
+
+
+.App-logo {
+  animation: spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +123,5 @@
     transform: rotate(360deg);
   }
 }
+*/
+

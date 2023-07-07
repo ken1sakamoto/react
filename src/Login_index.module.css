@@ -1,0 +1,96 @@
+@font-face {
+
+  font-family: 'PS2';
+
+  src: url('../public/PressStart2P.ttf') format('truetype');
+  /* フォントファイルへのパスを指定 */
+
+}
+
+
+
+
+nav {
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.box {
+
+  padding: 80px;
+
+  border-radius: 4px;
+
+  width: 500px;
+
+  margin: 0 auto;
+
+  color: #030303;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+
+.label {
+
+  font-family: 'PS2', sans-serif;
+  /* フォントの種類を変更 */
+
+  font-size: 18px;
+  /* フォントサイズを変更 */
+
+  /* 他のスタイル */
+
+}
+
+
+
+button {
+
+  background-color: #e3b707;
+
+  font-family: 'PS2', sans-serif;
+
+  font-weight: lighter;
+
+  border-radius: 10px;
+
+  padding: 1rem 2rem;
+
+  color: #fff;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-self: flex-end;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.3s ease;
+
+}
+
+
+
+button:hover {
+
+  transform: scale(1.1);
+
+  background-color: #ef9309;
+
+}

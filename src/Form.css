@@ -6,13 +6,13 @@
     margin-top: 10px;
   }
   
-  button {
+  .button {
     margin-left: 170px;
     position: center;
   }
 
 .Form-header {
-    background-color: #25e74f;
+    background-color: #1f552b;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,3 @@
     font-size: calc(10px + 2vmin);
     color: rgb(255, 255, 255);
   }
-
-.nowrap div:nth-child(5),.nowrap td:nth-child(2){
-    white-space: nowrap;
-}

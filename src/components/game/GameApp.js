@@ -11,6 +11,7 @@ const questions = [
       { answerText: '2次曲線', isCorrect: true },
     ],
   },
+  
 ];
 
 const GameApp = () => {
